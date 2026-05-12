@@ -1,2 +1,6 @@
-"# Mon mini site" 
-"Ce projet a ete cree pour un TP Git/GitHub." 
+# Mon mini site
+
+Ce projet a été créé pour un TP Git/GitHub.
+
+- Page HTML + CSS
+- Hébergé sur GitHub
