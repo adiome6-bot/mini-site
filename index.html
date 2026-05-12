@@ -3,17 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon mini site</title>
+    <title>Mon Mini Site - TP Git</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenue sur mon site</h1>
-        <p>Ce projet utilise Git et GitHub.</p>
-        <button id="clic">Clique ici</button>
+        <h1>🚀 Bienvenue sur mon mini site</h1>
+        <p>Ce projet a été créé dans le cadre d'un TP sur <strong>Git</strong> et <strong>GitHub</strong>.</p>
+        
+        <div class="card">
+            <h2>📌 Commandes Git apprises</h2>
+            <ul>
+                <li><code>git init</code> - Initialiser un dépôt</li>
+                <li><code>git add .</code> - Ajouter des fichiers</li>
+                <li><code>git commit -m "message"</code> - Enregistrer une version</li>
+                <li><code>git push</code> - Envoyer sur GitHub</li>
+                <li><code>git log</code> - Voir l'historique</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🌿 Pourquoi utiliser des branches ?</h2>
+            <p>Les branches permettent de développer de nouvelles fonctionnalités <strong>sans modifier la version stable</strong> (main/master).</p>
+        </div>
+
+        <button id="clicBtn">✨ Clique ici ✨</button>
+        <p id="message" class="hidden">🎉 Félicitations ! Tu as compris l'essentiel de Git !</p>
     </div>
+
     <script>
-        document.getElementById("clic").onclick = () => alert("Hello GitHub !");
+        const button = document.getElementById('clicBtn');
+        const message = document.getElementById('message');
+        
+        button.addEventListener('click', function() {
+            message.classList.toggle('hidden');
+            button.textContent = button.textContent === '✨ Clique ici ✨' ? '👏 Bravo !' : '✨ Clique ici ✨';
+        });
     </script>
 </body>
 </html>
